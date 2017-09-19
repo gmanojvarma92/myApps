@@ -1,0 +1,12 @@
+import { Injectable } from '@angualr/core';
+
+import { Hero } from './hero';
+import { HEROES } from './mock-heroes';
+
+@Injectable()
+
+export class HeroService { 
+    getHeroes(): void {
+        return HEROES;
+    }
+}
